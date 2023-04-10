@@ -22,7 +22,7 @@ public class PostController {
     public String postMember(@RequestBody Map<String, Object> postData){
         StringBuilder sb = new StringBuilder();
 
-        postData.entrySet().forEach(map -> sb.append(map.getKey() + " : " + map.getKey() + "\n"));
+        postData.entrySet().forEach(map -> sb.append(map.getKey() + " : " + map.getValue() + "\n"));
         return sb.toString();
     }
 
